@@ -1,0 +1,18 @@
+The commands executed on the terminal were as follows:
+
+$ ls
+$ cd udacity_training
+$ head weather.txt
+$ wc weather.txt
+$ hadoop fs -ls
+$ pwd
+$ cd ../code
+$ ls
+$ cd ../data
+$ ls
+$ hadoop fs -mkdir myNewInput
+$ hadoop fs -ls
+$ hadoop fs -put weather.txt myNewInput
+$ hs ../code/mapper.py ../code/reducer.py myNewInput/weather.txt outputNew
+$ hadoop fs -ls outputNew
+$ hadoop fs -cat outputNew/part-00000 | more
